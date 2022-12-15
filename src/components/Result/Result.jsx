@@ -1,14 +1,6 @@
-import React from 'react';
 import * as SC from './Result.styled';
 
-interface IProps {
-  input: number,
-  from: string,
-  to: string,
-  output: number,
-}
-
-export const Result: React.FC<IProps> = ({ input, from, to, output }) => {
+export const Result = ({ input, from, to, output }) => {
   return (
     <SC.Wrapper>
       <h2>Converted Amount:</h2>
